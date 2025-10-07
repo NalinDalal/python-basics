@@ -19,3 +19,8 @@ friends_1.remove("Jim")
 
 print(friends_1)
 
+#find index of something
+print(friends_1.index("Kevin"))
+
+#find count of something
+print(friends_1.count("Kevin"))

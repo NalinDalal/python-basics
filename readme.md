@@ -77,6 +77,7 @@ print("I love " + celebrity)
 ### Lists
 
 they are similar to vector in cpp i guess
+they store the data of same type in them
 
 ```python
 friends = ["Kevin", "Karen", "Jim"]
@@ -91,20 +92,33 @@ friends[1] = "Mike"
 lucky_numbers = [4, 8, 15, 16, 23, 42]
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 friends.extend(lucky_numbers)
-friends.append("Creed")
-friends.insert(1, "Kelly")
-friends.remove("Jim")
+friends.append("Creed") #puts at last
+friends.insert(1, "Kelly")  #puts at specified index given
+friends.remove("Jim")   #remove something from list
+friends.pop()   #basically gets rid of last element of list
 print(friends)
+
+#sort the list
+lucky_numbers.sort()
 ```
 
 ### Tuples
+
+type of data structure which helps to store different values but have few differences
+u see they are declared with `()` to store the data
 
 ```python
 coordinates = (4, 5)
 print(coordinates[0])
 ```
 
+they are immutable by default
+
+a list can have tuples as it's arguments
+
 ### Functions
+
+coillection of code that performs some task
 
 ```python
 def say_hi(name):
@@ -116,6 +130,8 @@ say_hi("Steve")
 
 ### Return Statement
 
+return something info from a function
+
 ```python
 def cube(num):
     return num ** 3
@@ -124,6 +140,8 @@ print(cube(3))
 ```
 
 ### If Statements
+
+check for a cindition if true of not
 
 ```python
 is_male = True
@@ -134,6 +152,8 @@ else:
 ```
 
 ### If Statements & Comparisons
+
+checks for condition if true or not, but this one basically helps you span out things
 
 ```python
 def max_num(num1, num2, num3):
@@ -168,6 +188,8 @@ else:
 
 ### Dictionaries
 
+allows to store data in key value pairs
+
 ```python
 monthConversions = {
     "Jan": "January",
@@ -180,6 +202,8 @@ print(monthConversions["Mar"])
 
 ### While Loop
 
+basically run till the defining condition as long it is true
+
 ```python
 i = 1
 while i <= 5:
@@ -191,6 +215,9 @@ print("Done")
 
 ### Building a Guessing Game
 
+basically prompt user to enter a guess, if guess is not equal to secret_word then we want him to take another guess
+use a while loop
+
 ```python
 secret_word = "giraffe"
 guess = ""
@@ -201,6 +228,8 @@ print("You win!")
 ```
 
 ### For Loops
+
+basically something to remove code repetition
 
 ```python
 for letter in "Python":
@@ -257,6 +286,8 @@ print(translate(input("Enter a phrase: ")))
 
 ### Try / Except
 
+basically used to do exception handling
+
 ```python
 try:
     number = int(input("Enter a number: "))
@@ -266,6 +297,8 @@ except:
 ```
 
 ### Reading Files
+
+read the files with `open()` and `read()` function
 
 ```python
 file = open("employees.txt", "r")
@@ -295,6 +328,10 @@ print(response.status_code)
 
 ### Classes & Objects
 
+classes is like a library that wraps around a object
+
+object is similar to a real world entity
+
 ```python
 class Student:
     def __init__(self, name, major, gpa, is_on_probation):
@@ -314,6 +351,8 @@ class Question:
 ```
 
 ### Object Functions
+
+function that can be used indie a class
 
 ```python
 class Student:
