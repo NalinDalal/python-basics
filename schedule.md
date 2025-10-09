@@ -36,26 +36,6 @@
 - Loops (`for`, `while`), range(), break/continue
 - Functions + parameters + return values
 
-**Resources:**
-
-- 🎥 [freeCodeCamp 4hr Python Course (best for beginners)](https://www.youtube.com/watch?v=rfscVS0vtbw)
-- 🧠 [CS50P Week 0–1: Python Basics](https://cs50.harvard.edu/python/)
-- 🧩 Practice:
-  - Small tasks:
-
-    ```python
-    # FizzBuzz
-    for i in range(1, 21):
-        if i % 3 == 0 and i % 5 == 0:
-            print("FizzBuzz")
-        elif i % 3 == 0:
-            print("Fizz")
-        elif i % 5 == 0:
-            print("Buzz")
-        else:
-            print(i)
-    ```
-
 ---
 
 ### 🗓️ **Day 3–4: Data Structures + File I/O (4–5 hrs)**
@@ -66,20 +46,6 @@
 - List comprehensions, slicing
 - Reading/writing text & CSV files
 - Intro to `os` and `json`
-
-**Resources:**
-
-- 🎥 [Python Data Structures – Corey Schafer](https://www.youtube.com/watch?v=R-HLU9Fl5ug)
-- 🧩 Mini-exercises:
-  - Word counter from a `.txt` file
-  - CSV reader → average a column
-
-  ```python
-  import csv
-  with open('data.csv') as f:
-      reader = csv.DictReader(f)
-      print(sum(int(r['Age']) for r in reader) / len(list(reader)))
-  ```
 
 ---
 

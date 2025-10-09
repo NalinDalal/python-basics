@@ -100,12 +100,58 @@ print(friends)
 
 #sort the list
 lucky_numbers.sort()
+luckey_numbers.index(4) #returns 0
 ```
+
+well you can slice a list via following: `[start:end+1:step]`
+
+```python
+x [1:4]     Items 1 to 3
+X [1:6:2]   Items 1, 3, 5
+x [3: ]     Items 3 to end
+x [: 5]     Items 0 to 4
+x [-1]      Last item
+x [-3:]     Last 3 items
+x [: -2]    All except last 2 items
+```
+
+All operations from Sequences, plus:
+
+- constructors:
+
+- del list1[2]
+  delete item from list1
+
+- list1.append(item)
+  appends an item to list1
+
+- list1.extend(sequence1)
+  appends a sequence to list1
+
+- list1.insert(index, item)
+  inserts item at index
+
+- list1.pop()
+  pops last item
+
+- list1.remove(item)
+  removes first instance of item
+
+- list1.reverse()
+  reverses list order
+
+- list1.sort()
+  sorts list in place
 
 ### Tuples
 
 type of data structure which helps to store different values but have few differences
 u see they are declared with `()` to store the data
+
+• Support all operations for Sequences
+• Immutable, but member objects may be mutable
+• If the contents of a list shouldn't change, use a tuple to prevent items from accidently being added, changed or deleted
+• Tuples are more efficient than lists due to Python's implementation
 
 ```python
 coordinates = (4, 5)
@@ -189,6 +235,7 @@ else:
 ### Dictionaries
 
 allows to store data in key value pairs
+Unordered Map sorta
 
 ```python
 monthConversions = {
@@ -199,6 +246,17 @@ monthConversions = {
 
 print(monthConversions["Mar"])
 ```
+
+---
+
+| Description                                           | Code                           |
+| ----------------------------------------------------- | ------------------------------ |
+| Add or change item in dict x                          | ['beef"] = 25.2                |
+| Remove item from dict x                               | del x['beef"]                  |
+| Get length of dict x                                  | len (x)                        |
+| Check membership in x(only looks in keys, not values) | `item in x` or `item not in x` |
+| Delete all items from dict x                          | x.clear ()                     |
+| Delete dict x                                         | del x                          |
 
 ### While Loop
 
