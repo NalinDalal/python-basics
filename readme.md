@@ -446,3 +446,9 @@ class ChineseChef(Chef):
 - **Regular Expressions**
 - **Object-Oriented Programming**
 - **Et Cetera**
+
+# Homework
+
+- Implement matrix operations from scratch
+- Build basic statistical analysis tool
+- Create data visualization dashboard
