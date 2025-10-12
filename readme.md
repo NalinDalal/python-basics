@@ -4,11 +4,6 @@ Alright let's start with python
 
 install python
 
-## Hello World
-
-```python
-print('hello world')
-```
 
 ## Variables
 
@@ -449,6 +444,78 @@ class ChineseChef(Chef):
 
 # Homework
 
-- Implement matrix operations from scratch
-- Build basic statistical analysis tool
-- Create data visualization dashboard
+- [Implement matrix operations from scratch](./23.matrixOpr.py)
+- [Build basic statistical analysis tool](./27.statistic-analytic.py)
+- [Create data visualization dashboard](./28.data-visualisation.py)
+
+# Linear Algebra
+that's to be honest only guass elimination, matrices and determinants
+all of which are learnt in m1 and m3, [notes](./linear_algebra.md)
+
+# Calculus
+it is like the building block of all of engineering.
+[notes](./calculus.md)
+
+# Statistics and Probability
+[notes](./probability.md), [statistics](./statistics.md)
+
+# NumPy & Pandas
+numpy is basically a library written to handle all ofnumerical computings in python
+not everything needs to be written from scratch, you can rely on external code also
+[notes for numpy](./numpy.md) [notes for pandas](./pandas.md)
+
+# Matplotlib
+
+ Matplotlib is the most widely used Python library for creating static, animated, and interactive visualizations. It allows you to create a wide variety of plots (line, scatter, bar, histogram, etc.) with fine control over every element.
+
+## Why is it important?
+ - Essential for data analysis and scientific computing in Python
+ - Lets you explore, understand, and communicate data visually
+ - Used in research, engineering, finance, and machine learning for plotting trends, distributions, and results
+ - Forms the foundation for higher-level libraries like Seaborn and Pandas plotting
+
+Seaborn is built on top of matplotlib and provides a high-level interface for attractive statistical graphics.
+
+## Common Plot Types
+- Line, scatter, bar, histogram
+- Titles, axis labels, legends
+
+## Mini Project: Data Dashboard
+- Load a dataset (e.g., iris)
+- Clean missing values
+- Plot distributions and correlations
+
+## Examples
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+
+# Basic plots
+x = [1, 2, 3, 4, 5]
+print(greeting.lower())
+plt.figure()
+plt.plot(x, y, label='Line')
+plt.scatter(x, y, label='Scatter')
+plt.bar(x, y, label='Bar')
+plt.xlabel('X axis')
+plt.ylabel('Y axis')
+plt.title('Basic Plots')
+plt.legend()
+plt.show()
+
+# Histogram
+data = [1, 2, 2, 3, 3, 3, 4, 4, 5]
+plt.hist(data, bins=5)
+plt.title('Histogram')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.show()
+
+# Data Dashboard with Seaborn
+df = sns.load_dataset('iris')
+df = df.dropna()
+sns.pairplot(df, hue='species')
+plt.suptitle('Iris Data Dashboard', y=1.02)
+plt.show()
+```
