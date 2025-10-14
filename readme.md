@@ -531,3 +531,4 @@ plt.show()
 
 1. matrix calculator to do addition, subtraction and matrix multiplication(day 13)
 2. Basic Stats Dashboard that upload CSV then find mean, std, visualize(day 14)
+   `streamlit run 33.dashboard.py`
