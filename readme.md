@@ -530,4 +530,4 @@ plt.show()
 # Homework Project
 
 1. matrix calculator to do addition, subtraction and matrix multiplication(day 13)
-2. Basic Stats Dashboard that upload CSV then find mean, std, visualize(day 14, just push on 14 oct)
+2. Basic Stats Dashboard that upload CSV then find mean, std, visualize(day 14)
