@@ -4,6 +4,15 @@ Alright let's start with python
 
 install python
 
+after installing python in macos you need to create a virtual environment for same
+
+```sh
+    python3 -m venv myenv
+    source path/myenv/bin/activate.fish
+    python3 -m pip install xyz  #to install packages
+    python3 ai.py   #to interpret the file
+```
+
 ## Variables
 
 ### Variables & Data Types
@@ -113,28 +122,28 @@ All operations from Sequences, plus:
 
 - constructors:
 
-- del list1[2]
+- `del list1[2]`
   delete item from list1
 
-- list1.append(item)
+- `list1.append(item)`
   appends an item to list1
 
-- list1.extend(sequence1)
-  appends a sequence to list1
+- `list1.extend(sequence1)`
+  appends sequence1 to list1
 
-- list1.insert(index, item)
+- `list1.insert(index, item)`
   inserts item at index
 
-- list1.pop()
+- `list1.pop()`
   pops last item
 
-- list1.remove(item)
+- `list1.remove(item)`
   removes first instance of item
 
-- list1.reverse()
+- `list1.reverse()`
   reverses list order
 
-- list1.sort()
+- `list1.sort()`
   sorts list in place
 
 ### Tuples
@@ -142,10 +151,10 @@ All operations from Sequences, plus:
 type of data structure which helps to store different values but have few differences
 u see they are declared with `()` to store the data
 
-• Support all operations for Sequences
-• Immutable, but member objects may be mutable
-• If the contents of a list shouldn't change, use a tuple to prevent items from accidently being added, changed or deleted
-• Tuples are more efficient than lists due to Python's implementation
+- Support all operations for Sequences
+- Immutable, but member objects may be mutable
+- If the contents of a list shouldn't change, use a tuple to prevent items from accidently being added, changed or deleted
+- Tuples are more efficient than lists due to Python's implementation
 
 ```python
 coordinates = (4, 5)
@@ -450,11 +459,13 @@ class ChineseChef(Chef):
 # Linear Algebra
 
 that's to be honest only guass elimination, matrices and determinants
+
 all of which are learnt in m1 and m3, [notes](./linear_algebra.md)
 
 # Calculus
 
 it is like the building block of all of engineering.
+
 [notes](./calculus.md)
 
 # Statistics and Probability
@@ -465,7 +476,9 @@ it is like the building block of all of engineering.
 
 numpy is basically a library written to handle all ofnumerical computings in python
 not everything needs to be written from scratch, you can rely on external code also
-[notes for numpy](./numpy.md) [notes for pandas](./pandas.md)
+
+[notes for numpy](./numpy.md)
+[notes for pandas](./pandas.md)
 
 # Matplotlib
 
@@ -531,4 +544,4 @@ plt.show()
 
 1. matrix calculator to do addition, subtraction and matrix multiplication(day 13)
 2. Basic Stats Dashboard that upload CSV then find mean, std, visualize(day 14)
-   `streamlit run 33.dashboard.py`
+   > > > `streamlit run 33.dashboard.py`
