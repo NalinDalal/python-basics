@@ -3,7 +3,11 @@ import csv
 #   - Word counter from a `.txt` file
 
 def count_words_from_txt(file_path):
-    """Count total words in a .txt file."""
+    """Count total words in a .txt file.
+
+    :param file_path: 
+
+    """
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             text = f.read()
@@ -17,7 +21,12 @@ def count_words_from_txt(file_path):
 #  - CSV reader → average a column
 
 def average_csv_column(file_path, column_name):
-    """Read a .csv file and average values in a numeric column."""
+    """Read a .csv file and average values in a numeric column.
+
+    :param file_path: param column_name:
+    :param column_name: 
+
+    """
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
@@ -43,6 +52,7 @@ def average_csv_column(file_path, column_name):
 
 
 def main():
+    """ """
     print("=== Word Counter from .txt ===")
     txt_path = input("Enter path to .txt file: ").strip()
     count_words_from_txt(txt_path)

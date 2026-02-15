@@ -1,5 +1,14 @@
 class Student:
+    """ """
     def __init__(self, name, major, gpa, is_on_probation):
+        """
+
+        :param name: param major:
+        :param gpa: param is_on_probation:
+        :param major: param is_on_probation:
+        :param is_on_probation: 
+
+        """
         self.name = name
         self.major = major
         self.gpa = gpa

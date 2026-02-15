@@ -2,16 +2,34 @@
 
 # Function to create a matrix
 def create_matrix(rows, cols, fill=0):
+    """
+
+    :param rows: param cols:
+    :param fill: Default value = 0)
+    :param cols: 
+
+    """
     return [[fill for _ in range(cols)] for _ in range(rows)]
 
 # Function to print a matrix nicely
 def print_matrix(matrix):
+    """
+
+    :param matrix: 
+
+    """
     for row in matrix:
         print(row)
     print()
 
 # Matrix addition
 def add_matrices(A, B):
+    """
+
+    :param A: param B:
+    :param B: 
+
+    """
     if len(A) != len(B) or len(A[0]) != len(B[0]):
         raise ValueError("Matrices must have the same dimensions for addition.")
     
@@ -23,6 +41,12 @@ def add_matrices(A, B):
 
 # Matrix subtraction
 def subtract_matrices(A, B):
+    """
+
+    :param A: param B:
+    :param B: 
+
+    """
     if len(A) != len(B) or len(A[0]) != len(B[0]):
         raise ValueError("Matrices must have the same dimensions for subtraction.")
     
@@ -34,6 +58,12 @@ def subtract_matrices(A, B):
 
 # Scalar multiplication
 def scalar_multiply(matrix, scalar):
+    """
+
+    :param matrix: param scalar:
+    :param scalar: 
+
+    """
     result = create_matrix(len(matrix), len(matrix[0]))
     for i in range(len(matrix)):
         for j in range(len(matrix[0])):
@@ -42,6 +72,12 @@ def scalar_multiply(matrix, scalar):
 
 # Matrix multiplication
 def multiply_matrices(A, B):
+    """
+
+    :param A: param B:
+    :param B: 
+
+    """
     if len(A[0]) != len(B):
         raise ValueError("Number of columns in A must equal number of rows in B for multiplication.")
     
@@ -56,6 +92,11 @@ def multiply_matrices(A, B):
 
 # Transpose of a matrix
 def transpose(matrix):
+    """
+
+    :param matrix: 
+
+    """
     rows, cols = len(matrix), len(matrix[0])
     result = create_matrix(cols, rows)
     for i in range(rows):

@@ -46,6 +46,7 @@ import seaborn as sns
 import pandas as pd
 
 def basic_plots():
+    """ """
     x = [1, 2, 3, 4, 5]
     y = [2, 3, 5, 7, 11]
     plt.figure()  # Creates a new figure window for plotting
@@ -59,6 +60,7 @@ def basic_plots():
     plt.show()  # Display the plot
 
 def histogram_plot():
+    """ """
     data = [1, 2, 2, 3, 3, 3, 4, 4, 5]
     plt.figure()  # New figure for histogram
     plt.hist(data, bins=5)  # Histogram with 5 bins
@@ -68,6 +70,7 @@ def histogram_plot():
     plt.show()
 
 def data_dashboard():
+    """ """
     df = sns.load_dataset('iris')
     # Clean missing values (if any)
     df = df.dropna()

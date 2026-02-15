@@ -46,19 +46,38 @@ Linear Algebra Notes
 import numpy as np
 
 def matrix_addition(A, B):
-    """Add two matrices."""
+    """Add two matrices.
+
+    :param A: param B:
+    :param B: 
+
+    """
     return np.add(A, B)
 
 def matrix_multiplication(A, B):
-    """Multiply two matrices."""
+    """Multiply two matrices.
+
+    :param A: param B:
+    :param B: 
+
+    """
     return np.matmul(A, B)
 
 def dot_product(v1, v2):
-    """Dot product of two vectors."""
+    """Dot product of two vectors.
+
+    :param v1: param v2:
+    :param v2: 
+
+    """
     return np.dot(v1, v2)
 
 def eigen(M):
-    """Return eigenvalues and eigenvectors of a matrix."""
+    """
+
+    :param M: 
+
+    """
     return np.linalg.eig(M)
 
 # Example usage

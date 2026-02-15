@@ -5,14 +5,23 @@ Supports addition, subtraction, and multiplication of matrices
 """
 
 def print_matrix(matrix, label="Matrix"):
-    """Pretty print a matrix"""
+    """Pretty print a matrix
+
+    :param matrix: param label:  (Default value = "Matrix")
+    :param label: Default value = "Matrix")
+
+    """
     print(f"\n{label}:")
     for row in matrix:
         print("  ", " ".join(f"{val:8.2f}" for val in row))
     print()
 
 def get_matrix_input(matrix_name):
-    """Get matrix dimensions and values from user"""
+    """Get matrix dimensions and values from user
+
+    :param matrix_name: 
+
+    """
     print(f"\nEnter {matrix_name}:")
     
     while True:
@@ -45,7 +54,12 @@ def get_matrix_input(matrix_name):
     return matrix
 
 def add_matrices(m1, m2):
-    """Add two matrices"""
+    """Add two matrices
+
+    :param m1: param m2:
+    :param m2: 
+
+    """
     rows = len(m1)
     cols = len(m1[0])
     
@@ -62,7 +76,12 @@ def add_matrices(m1, m2):
     return result
 
 def subtract_matrices(m1, m2):
-    """Subtract matrix m2 from m1"""
+    """Subtract matrix m2 from m1
+
+    :param m1: param m2:
+    :param m2: 
+
+    """
     rows = len(m1)
     cols = len(m1[0])
     
@@ -79,7 +98,12 @@ def subtract_matrices(m1, m2):
     return result
 
 def multiply_matrices(m1, m2):
-    """Multiply two matrices"""
+    """Multiply two matrices
+
+    :param m1: param m2:
+    :param m2: 
+
+    """
     rows1 = len(m1)
     cols1 = len(m1[0])
     rows2 = len(m2)

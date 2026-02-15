@@ -7,6 +7,13 @@ else:
 ### If Statements & Comparisons
 
 def max_num(num1, num2, num3):
+    """
+
+    :param num1: param num2:
+    :param num3: param num2:
+    :param num2: 
+
+    """
     if num1 >= num2 and num1 >= num3:
         return num1
     elif num2 >= num1 and num2 >= num3:

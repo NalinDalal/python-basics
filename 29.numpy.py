@@ -24,6 +24,7 @@ Function/Method Explanations:
 import numpy as np
 
 def numpy_examples():
+    """ """
     a = np.array([1, 2, 3])  # Create a NumPy array from a list
     b = np.ones(3)           # Array of ones, length 3
     c = np.zeros(3)          # Array of zeros, length 3

@@ -24,6 +24,7 @@ Function/Method Explanations:
 import pandas as pd
 
 def pandas_examples():
+    """ """
     data = {'A': [1, 2, 3], 'B': [4, 5, 6]}  # Dictionary for DataFrame
     df = pd.DataFrame(data)  # Create DataFrame from dictionary
     print("DataFrame:\n", df)
