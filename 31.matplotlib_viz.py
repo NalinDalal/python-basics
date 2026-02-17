@@ -10,11 +10,9 @@ Why is it important?
 - Lets you explore, understand, and communicate data visually.
 - Used in research, engineering, finance, and machine learning for plotting trends, distributions, and results.
 - Forms the foundation for higher-level libraries like Seaborn and Pandas plotting.
-"""
-"""
-Matplotlib & Visualization Notes
--------------------------------
-Matplotlib is a Python library for creating static, animated, and interactive visualizations in Python.
+
+Seaborn is built on top of matplotlib and provides a high-level interface for attractive statistical graphics.
+
 
 Common plot types:
 - Line plot: Shows trends over time or ordered categories.
@@ -59,6 +57,7 @@ def basic_plots():
     plt.legend()  # Show legend for all labeled plots
     plt.show()  # Display the plot
 
+#plotting a histogram
 def histogram_plot():
     """ """
     data = [1, 2, 2, 3, 3, 3, 4, 4, 5]
@@ -69,6 +68,7 @@ def histogram_plot():
     plt.ylabel('Frequency')
     plt.show()
 
+#data dashboard with seaborn
 def data_dashboard():
     """ """
     df = sns.load_dataset('iris')

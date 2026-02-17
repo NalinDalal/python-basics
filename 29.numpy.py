@@ -1,6 +1,10 @@
 """
 NumPy Notes
 -----------
+
+numpy is basically a library written to handle all ofnumerical computings in python
+not everything needs to be written from scratch, you can rely on external code also
+
 NumPy is a library for numerical computing in Python.
 
 Key Concepts:
