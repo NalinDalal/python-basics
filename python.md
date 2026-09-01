@@ -7,15 +7,15 @@ install python
 after installing python in macos you need to create a virtual environment for same
 
 ```sh
-    python3 -m venv myenv
-    source path/myenv/bin/activate.fish
+    python3 -m venv myenv       #creating a virtual environment
+    source path/myenv/bin/activate.fish #activating the virtual environment
     python3 -m pip install xyz  #to install packages
-    python3 ai.py   #to interpret the file
+    python3 1.hello_world.py   #to interpret the file
 ```
 
-### Variables & Data Types
+# Variables & Data Types
 
-In Python, variables are used to store data. You don’t need to declare a variable type — Python infers it automatically.
+In Python, variables are used to store data. You don’t need to declare a variable type, Python infers it automatically.
 
 ```python
 name = "Nalin"
@@ -24,7 +24,7 @@ height = 5.9
 is_student = True
 ```
 
-### Working With Strings
+## Working With Strings
 
 Strings are sequences of characters enclosed in quotes.
 
@@ -37,7 +37,7 @@ print(greeting.upper())
 print(len(greeting))
 ```
 
-### Working With Numbers
+## Working With Numbers
 
 Python supports integers, floats, and complex numbers.
 
@@ -48,14 +48,14 @@ print(num * 2)
 print(num ** 2)  # exponentiation
 ```
 
-### Getting Input From Users
+## Getting Input From Users
 
 ```python
 name = input("Enter your name: ")
 print("Hello " + name)
 ```
 
-### Building a Basic Calculator
+## Building a Basic Calculator
 
 ```python
 num1 = float(input("Enter first number: "))
@@ -63,7 +63,7 @@ num2 = float(input("Enter second number: "))
 print(num1 + num2)
 ```
 
-### Mad Libs Game
+## Mad Libs Game
 
 ```python
 color = input("Enter a color: ")
@@ -75,16 +75,16 @@ print(plural_noun + " are blue")
 print("I love " + celebrity)
 ```
 
-### Lists
+## Lists
 
 they are similar to vector in cpp i guess
 they store the data of same type in them
 
 ```python
 friends = ["Kevin", "Karen", "Jim"]
-print(friends[0])
-print(friends[-1])
-friends[1] = "Mike"
+print(friends[0])   # 'Kevin'
+print(friends[-1])  # 'Jim'
+friends[1] = "Mike" # re-assign the 1st index with new value
 ```
 
 ### List Functions
@@ -118,39 +118,29 @@ x [: -2]    All except last 2 items
 
 All operations from Sequences, plus:
 
-- constructors:
+- `del list1[2]`: delete item from list1
 
-- `del list1[2]`
-  delete item from list1
+- `list1.append(item)`: appends an item to list1
 
-- `list1.append(item)`
-  appends an item to list1
+- `list1.extend(sequence1)`: appends sequence1 to list1
 
-- `list1.extend(sequence1)`
-  appends sequence1 to list1
+- `list1.insert(index, item)`: inserts item at index
 
-- `list1.insert(index, item)`
-  inserts item at index
+- `list1.pop()`: pops last item
 
-- `list1.pop()`
-  pops last item
+- `list1.remove(item)`: removes first instance of item
 
-- `list1.remove(item)`
-  removes first instance of item
+- `list1.reverse()`: reverses list order
 
-- `list1.reverse()`
-  reverses list order
+- `list1.sort()`: sorts list in place
 
-- `list1.sort()`
-  sorts list in place
-
-### Tuples
+## Tuples
 
 type of data structure which helps to store different values but have few differences
 u see they are declared with `()` to store the data
 
 - Support all operations for Sequences
-- Immutable, but member objects may be mutable
+- _Immutable_, but member objects may be mutable
 - If the contents of a list shouldn't change, use a tuple to prevent items from accidently being added, changed or deleted
 - Tuples are more efficient than lists due to Python's implementation
 
@@ -159,23 +149,21 @@ coordinates = (4, 5)
 print(coordinates[0])
 ```
 
-they are immutable by default
-
 a list can have tuples as it's arguments
 
-### Functions
+## Functions
 
-coillection of code that performs some task
+collection of code that performs some task
 
 ```python
 def say_hi(name):
     print("Hello " + name)
 
-say_hi("Mike")
-say_hi("Steve")
+say_hi("Mike")  # Hello Mike
+say_hi("Steve") # Hello Steve
 ```
 
-### Return Statement
+## Return Statement
 
 return something info from a function
 
@@ -186,9 +174,9 @@ def cube(num):
 print(cube(3))
 ```
 
-### If Statements
+## If-Else Statements
 
-check for a cindition if true of not
+check for a condition if true of not
 
 ```python
 is_male = True
@@ -198,7 +186,7 @@ else:
     print("You are not a male.")
 ```
 
-### If Statements & Comparisons
+## If Statements & Comparisons
 
 checks for condition if true or not, but this one basically helps you span out things
 
@@ -214,26 +202,9 @@ def max_num(num1, num2, num3):
 print(max_num(3, 4, 5))
 ```
 
-### Building a Better Calculator
+---
 
-```python
-num1 = float(input("Enter first number: "))
-op = input("Enter operator: ")
-num2 = float(input("Enter second number: "))
-
-if op == "+":
-    print(num1 + num2)
-elif op == "-":
-    print(num1 - num2)
-elif op == "*":
-    print(num1 * num2)
-elif op == "/":
-    print(num1 / num2)
-else:
-    print("Invalid operator")
-```
-
-### Dictionaries
+# Dictionaries
 
 allows to store data in key value pairs
 Unordered Map sorta
@@ -248,8 +219,6 @@ monthConversions = {
 print(monthConversions["Mar"])
 ```
 
----
-
 | Description                                           | Code                           |
 | ----------------------------------------------------- | ------------------------------ |
 | Add or change item in dict x                          | ['beef"] = 25.2                |
@@ -259,9 +228,9 @@ print(monthConversions["Mar"])
 | Delete all items from dict x                          | x.clear ()                     |
 | Delete dict x                                         | del x                          |
 
-### While Loop
+# While Loop
 
-basically run till the defining condition as long it is true
+basically run as long as the defining condition is true
 
 ```python
 i = 1
@@ -272,7 +241,9 @@ while i <= 5:
 print("Done")
 ```
 
-### Building a Guessing Game
+---
+
+# Building a Guessing Game
 
 basically prompt user to enter a guess, if guess is not equal to secret_word then we want him to take another guess
 use a while loop
@@ -286,7 +257,7 @@ while guess != secret_word:
 print("You win!")
 ```
 
-### For Loops
+# For Loops
 
 basically something to remove code repetition
 
@@ -295,7 +266,7 @@ for letter in "Python":
     print(letter)
 ```
 
-### Exponent Function
+# Exponent Function
 
 ```python
 def raise_to_power(base_num, pow_num):
@@ -307,7 +278,7 @@ def raise_to_power(base_num, pow_num):
 print(raise_to_power(2, 3))
 ```
 
-### 2D Lists & Nested Loops
+# 2D Lists & Nested Loops
 
 ```python
 number_grid = [
@@ -322,7 +293,7 @@ for row in number_grid:
         print(col)
 ```
 
-### Building a Translator
+## Building a Translator
 
 ```python
 def translate(phrase):
@@ -337,13 +308,7 @@ def translate(phrase):
 print(translate(input("Enter a phrase: ")))
 ```
 
-### Comments
-
-```python
-# This is a single-line comment
-```
-
-### Try / Except
+# Try / Except
 
 basically used to do exception handling
 
@@ -355,7 +320,7 @@ except:
     print("Invalid input")
 ```
 
-### Reading Files
+# Reading Files
 
 read the files with `open()` and `read()` function
 
@@ -365,7 +330,7 @@ print(file.read())
 file.close()
 ```
 
-### Writing to Files
+# Writing to Files
 
 ```python
 file = open("employees.txt", "a")
@@ -373,19 +338,7 @@ file.write("\nToby - HR")
 file.close()
 ```
 
-### Modules & Pip
-
-```bash
-pip install requests
-```
-
-```python
-import requests
-response = requests.get("https://api.github.com")
-print(response.status_code)
-```
-
-### Classes & Objects
+# Classes & Objects
 
 classes is like a library that wraps around a object
 
@@ -400,7 +353,7 @@ class Student:
         self.is_on_probation = is_on_probation
 ```
 
-### Building a Multiple Choice Quiz
+## Building a Multiple Choice Quiz
 
 ```python
 class Question:
@@ -409,7 +362,7 @@ class Question:
         self.answer = answer
 ```
 
-### Object Functions
+## Object Functions
 
 function that can be used indie a class
 
@@ -423,7 +376,7 @@ class Student:
         return self.gpa >= 3.5
 ```
 
-### Inheritance
+## Inheritance
 
 ```python
 class Chef:
