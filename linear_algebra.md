@@ -1,43 +1,79 @@
-# Linear Algebra Notes
+# Linear Algebra
 
 ## Vectors
+
 A vector is an ordered list of numbers. Example:
 
 ```
 v = [1, 2, 3]
 ```
 
+python equivalent->
+
+```py
+import numpy as np
+A=np.array([1,2,3])
+```
+
 ## Matrix Operations
+
 A matrix is a 2D array of numbers. Example:
 
 ```
 A = [[1, 2], [3, 4]]
 ```
 
+python equivalent->
+
+```py
+import numpy as np
+A=np.array([[1,2],[3,4]])
+```
+
 ### Addition
+
 Add corresponding elements:
+
 ```
 A + B = [[a11+b11, a12+b12], [a21+b21, a22+b22]]
 ```
 
+```py
+np.add(A,B)
+```
+
 ### Multiplication
+
 Matrix multiplication is not element-wise. For A (m x n) and B (n x p):
+
 ```
 C = AB, where cij = sum(Aik * Bkj)
 ```
 
+```python
+np.matmul(A,B)
+```
+
 ### Dot Product
+
 For vectors a and b:
+
 ```
 a · b = a1*b1 + a2*b2 + ... + an*bn
 ```
 
+```py
+np.dot(a,b)
+```
+
 ### Eigenvalues/Eigenvectors (Conceptual)
+
 For a square matrix M, if Mx = λx, then λ is an eigenvalue and x is an eigenvector.
 
 ---
 
 ## Example (Python)
+
 ```python
 import numpy as np
 A = np.array([[1, 2], [3, 4]])
