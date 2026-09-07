@@ -6,33 +6,40 @@ Statistics Notes
 - Standard Deviation: Square root of variance.
 - Normal Distribution: Bell-shaped, symmetric about the mean.
 """
+
 import numpy as np
 
-def mean(data):
+
+# argument has type as list
+# function returns a type as float
+def mean(data: list) -> float:
     """
 
-    :param data: 
+    :param data:
 
     """
     return np.mean(data)
 
-def variance(data):
+
+def variance(data: list) -> float:
     """
 
-    :param data: 
+    :param data:
 
     """
     return np.var(data)
 
-def stddev(data):
+
+def stddev(data: list) -> float:
     """
 
-    :param data: 
+    :param data:
 
     """
     return np.std(data)
 
-def normal_samples(mu=0, sigma=1, n=5):
+
+def normal_samples(mu=0, sigma=1, n=5) -> np.ndarray:
     """
 
     :param mu: Default value = 0)
@@ -41,6 +48,7 @@ def normal_samples(mu=0, sigma=1, n=5):
 
     """
     return np.random.normal(loc=mu, scale=sigma, size=n)
+
 
 # Example usage
 if __name__ == "__main__":

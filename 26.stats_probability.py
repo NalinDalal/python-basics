@@ -1,4 +1,3 @@
-
 # Stats & Probability: Mean, Variance, Normal Distribution, Simulations
 #
 # - np.mean(nums): Mean (average) of a list/array
@@ -11,18 +10,18 @@ import numpy as np
 import random
 
 # Mean and Variance
-nums = [1, 2, 3, 4, 5]
-print('Mean:', np.mean(nums))      # Compute mean
-print('Variance:', np.var(nums))   # Compute variance
+nums: list = [1, 2, 3, 4, 5]
+print("Mean:", np.mean(nums))  # Compute mean
+print("Variance:", np.var(nums))  # Compute variance
 
 # Normal Distribution
-samples = np.random.normal(loc=0, scale=1, size=5)  # 5 samples from N(0,1)
-print('Normal distribution samples:', samples)
+samples: np.ndarray = np.random.normal(loc=0, scale=1, size=5)  # 5 samples from N(0,1)
+print("Normal distribution samples:", samples)
 
 # Simulate Coin Toss
-coin_tosses = [random.choice(['H', 'T']) for _ in range(10)]  # 10 random tosses
-print('Coin tosses:', coin_tosses)
+coin_tosses: list = [random.choice(["H", "T"]) for _ in range(10)]  # 10 random tosses
+print("Coin tosses:", coin_tosses)
 
 # Simulate Dice Rolls
-dice_rolls = [random.randint(1, 6) for _ in range(10)]  # 10 random dice rolls
-print('Dice rolls:', dice_rolls)
+dice_rolls: list = [random.randint(1, 6) for _ in range(10)]  # 10 random dice rolls
+print("Dice rolls:", dice_rolls)

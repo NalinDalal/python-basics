@@ -4,6 +4,7 @@
 
 - Probability of an event A: P(A) = (number of favorable outcomes) / (total outcomes)
 - 0 ≤ P(A) ≤ 1
+  Probability is the measure of the likelihood of an event. what are chances it will occur
 
 ## Coin Toss Example
 

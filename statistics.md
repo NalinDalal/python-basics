@@ -3,14 +3,24 @@
 ## Mean
 
 The average value: mean = (sum of all values) / (number of values); a value to represent every no in set
+how would you do it in python: loop through array, sum it, then divide with size
+
+```python
+import numpy as np
+array=[1,2,3,4,5,6]
+
+#call the mean operation ddirectly
+mean=np.mean(array)
+
+```
 
 ## Variance
 
 measure of how far a set of numbers are spread out from their average value
 
-## Probability
-
-Probability is the measure of the likelihood of an event. what are chances it will occur
+```python
+var=np.var(array)
+```
 
 ## Normal Distribution
 
