@@ -2,7 +2,7 @@
 NumPy Notes
 -----------
 
-numpy is basically a library written to handle all ofnumerical computings in python
+numpy is basically a library written to handle all numerical computings in python
 not everything needs to be written from scratch, you can rely on external code also
 
 NumPy is a library for numerical computing in Python.
@@ -25,22 +25,25 @@ Function/Method Explanations:
 - np.mean(a): Computes the mean (average) of array a.
 - np.dot(a, b): Computes the dot product of two arrays.
 """
+
 import numpy as np
+
 
 def numpy_examples():
     """ """
     a = np.array([1, 2, 3])  # Create a NumPy array from a list
-    b = np.ones(3)           # Array of ones, length 3
-    c = np.zeros(3)          # Array of zeros, length 3
+    b = np.ones(3)  # Array of ones, length 3
+    c = np.zeros(3)  # Array of zeros, length 3
     d = np.arange(0, 10, 2)  # Array: [0, 2, 4, 6, 8]
     print("Array a:", a)
     print("Ones:", b)
     print("Zeros:", c)
     print("Arange:", d)
-    print("a + b:", a + b)         # Element-wise addition
-    print("a * 2:", a * 2)         # Element-wise multiplication (broadcasting)
-    print("Mean of a:", np.mean(a)) # Mean of array
-    print("Dot product a·b:", np.dot(a, b)) # Dot product
+    print("a + b:", a + b)  # Element-wise addition
+    print("a * 2:", a * 2)  # Element-wise multiplication (broadcasting)
+    print("Mean of a:", np.mean(a))  # Mean of array
+    print("Dot product a·b:", np.dot(a, b))  # Dot product
+
 
 if __name__ == "__main__":
     numpy_examples()

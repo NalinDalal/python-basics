@@ -6,7 +6,7 @@
 
 # [Statistics](./statistics.md) and [Probability](./probability.md)
 
-# [NumPy](./numpy.py) & [Pandas](./pandas.md)
+# [NumPy](./numpy.md) & [Pandas](./pandas.md)
 
 # [Matplotlib](./31.matplotlib_viz.py)
 
