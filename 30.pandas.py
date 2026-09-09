@@ -21,18 +21,21 @@ Function/Method Explanations:
 - df.describe(): Returns count, mean, std, min, max, quartiles for each column.
 - df[df['A'] > 1]: Filters rows where column 'A' > 1.
 """
+
 import pandas as pd
+
 
 def pandas_examples():
     """ """
-    data = {'A': [1, 2, 3], 'B': [4, 5, 6]}  # Dictionary for DataFrame
+    data = {"A": [1, 2, 3], "B": [4, 5, 6]}  # Dictionary for DataFrame
     df = pd.DataFrame(data)  # Create DataFrame from dictionary
     print("DataFrame:\n", df)
-    print("Column A:", df['A'])  # Select column 'A' (Series)
-    print("Mean of B:", df['B'].mean())  # Mean of column 'B'
+    print("Column A:", df["A"])  # Select column 'A' (Series)
+    print("Mean of B:", df["B"].mean())  # Mean of column 'B'
     print("Describe:\n", df.describe())  # Summary statistics
     # Filtering rows where column 'A' > 1
-    print("Rows where A > 1:\n", df[df['A'] > 1])
+    print("Rows where A > 1:\n", df[df["A"] > 1])
+
 
 if __name__ == "__main__":
     pandas_examples()
