@@ -39,45 +39,54 @@ Mini Project: Data Dashboard
 - Clean missing values (df.dropna())
 - Plot distributions and correlations (sns.pairplot)
 """
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
+
 def basic_plots():
-    """ """
+    """
+    length of x and y should always be same
+    """
     x = [1, 2, 3, 4, 5]
     y = [2, 3, 5, 7, 11]
     plt.figure()  # Creates a new figure window for plotting
-    plt.plot(x, y, label='Line')  # Line plot
-    plt.scatter(x, y, label='Scatter')  # Scatter plot
-    plt.bar(x, y, label='Bar')  # Bar plot
-    plt.xlabel('X axis')  # Label for x-axis
-    plt.ylabel('Y axis')  # Label for y-axis
-    plt.title('Basic Plots')  # Title of the plot
+    plt.plot(x, y, label="Line")  # Line plot
+    plt.scatter(x, y, label="Scatter")  # Scatter plot
+    plt.bar(x, y, label="Bar")  # Bar plot
+    plt.xlabel("X axis")  # Label for x-axis
+    plt.ylabel("Y axis")  # Label for y-axis
+    plt.title("Basic Plots")  # Title of the plot
     plt.legend()  # Show legend for all labeled plots
     plt.show()  # Display the plot
 
-#plotting a histogram
+
+# plotting a histogram
 def histogram_plot():
-    """ """
+    """
+    To call histogram plot, pass the data as list
+    """
     data = [1, 2, 2, 3, 3, 3, 4, 4, 5]
     plt.figure()  # New figure for histogram
     plt.hist(data, bins=5)  # Histogram with 5 bins
-    plt.title('Histogram')
-    plt.xlabel('Value')
-    plt.ylabel('Frequency')
+    plt.title("Histogram")
+    plt.xlabel("Value")
+    plt.ylabel("Frequency")
     plt.show()
 
-#data dashboard with seaborn
+
+# data dashboard with seaborn
 def data_dashboard():
     """ """
-    df = sns.load_dataset('iris')
+    df = sns.load_dataset("iris")
     # Clean missing values (if any)
     df = df.dropna()
     # Pairplot for correlations
-    sns.pairplot(df, hue='species')
-    plt.suptitle('Iris Data Dashboard', y=1.02)
+    sns.pairplot(df, hue="species")
+    plt.suptitle("Iris Data Dashboard", y=1.02)
     plt.show()
+
 
 if __name__ == "__main__":
     basic_plots()
